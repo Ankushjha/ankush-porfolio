@@ -6,18 +6,22 @@ import Portfolio from "./components/Portfolio"
 import Experience from "./components/Experience"
 import Footer from "./components/Footer"
 import Contact from "./components/Contact"
+import { Toaster } from "react-hot-toast"
 
 function App() {
 
   return (
     <>
-      <Navbar />
-      <Home />
-      <About />
-      <Portfolio />
-      <Experience />
-      <Contact />
-      <Footer />
+      <div>
+        <Navbar />
+        <Home />
+        <About />
+        <Portfolio />
+        <Experience />
+        <Contact />
+        <Footer />
+      </div>
+      <Toaster />
     </>
   )
 }

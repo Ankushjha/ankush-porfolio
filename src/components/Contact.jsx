@@ -1,17 +1,30 @@
+import axios from 'axios'
 import React from 'react'
 import { useForm } from 'react-hook-form'
+import toast from 'react-hot-toast'
 
 const Contact = () => {
 
     const {
         register,
         handleSubmit,
-        watch,
         formState: { errors },
-      } = useForm()
-    
-      const onSubmit = (data) => console.log(data)
-    
+    } = useForm()
+
+    const onSubmit = async(data) => {  //if we have to communicate with APIs, the response will get delay while travelling to and fro so that is why we use async and await so that the excution with be on hold till response didn't came. For this we use ASYNC AWAIT. It is the best way to handle promises or to perform asyncronus function.
+        const userInfo = {
+            fullname: data.fullname,
+            email: data.email,
+            message: data.message
+        }
+        try {
+            await axios.post("https://getform.io/f/blljexmb", userInfo);
+            toast.success("Your message has been sent.");
+        } catch (error) {
+            toast.error("Something went wrong");
+        }
+    }
+
     return (
         <>
             <div name="Contact" className='max-w-screen-2xl container mx-auto px-4 md:px-20 my-16'>
