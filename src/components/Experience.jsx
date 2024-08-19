@@ -1,9 +1,9 @@
 import React from 'react'
 import html from '../../public/html.png'
 import javascript from '../../public/javascript.png'
-import oracle from '../../public/oracle.png'
+import xampp from '../../public/xampp.png'
 import css from '../../public/css.jpg'
-import java from '../../public/java.png'
+import python from '../../public/python.webp'
 import drupal from '../../public/drupal.png'
 import wordpress from '../../public/wordpress.png'
 
@@ -21,8 +21,8 @@ const Experience = () => {
         },
         {
             id: 3,
-            logo: oracle,
-            name: "Oracle"
+            logo: xampp,
+            name: "XAMPP"
         },
         {
             id: 4,
@@ -31,8 +31,8 @@ const Experience = () => {
         },
         {
             id: 5,
-            logo: java,
-            name: "Java"
+            logo: python,
+            name: "Python"
         },
         {
             id: 6,
