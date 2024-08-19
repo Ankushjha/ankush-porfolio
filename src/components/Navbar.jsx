@@ -36,7 +36,7 @@ const Navbar = () => {
                         <img src={pic} className='h-12 w-12 rounded-full' alt="logo" />
                         <h1 className='font-semibold text-xl cursor-pointer'>
                             Ankus<span className='text-green-500 text-2xl'>h</span>
-                            <p className='text-sm'>Web Developer</p>
+                            <p className='text-sm'>Junior Software Engineer</p>
                         </h1>
                     </div>
                     {/* Desktop navbar  */}
