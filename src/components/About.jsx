@@ -57,7 +57,7 @@ const About = () => {
         <br />
         <div>
           <p className='font-semibold'>TechaxLabs LLP, <span className='text-sm font-thin'>Kolkata IN</span></p>
-          <p className='text-sm'>Web Developer</p>
+          <p className='text-sm'>Web Developer (Intern)</p>
           <p className='text-sm'>Jul'21 - Jul'22</p>
           <br />
           <ul className='list-disc ps-10'>
